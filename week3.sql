@@ -51,9 +51,20 @@ VALUES ('glazed', 'ring', 3);
 
 SELECT * FROM donuts;
 
+SELECT * FROM donuts WHERE name = 'apple fritter';
+SELECT * FROM donuts WHERE Name = 'apple fritter';
+SELECT * FROM donuts WHERE name = 'Apple fritter';
 
-
-
+SELECT * FROM donuts WHERE name = 'apple';
+SELECT * FROM donuts WHERE type = 'ring' AND price = 2.00;
+SELECT * FROM donuts WHERE type = 'ring' OR price = 2.00;
+SELECT * FROM donuts WHERE type = 'ring' AND price < 2.50;
+SELECT * FROM donuts WHERE type <> 'cruller';
+SELECT * FROM donuts WHERE name LIKE 'j%';
+SELECT * FROM donuts WHERE price BETWEEN 1.50 AND 2.00;
+SELECT * FROM donuts WHERE name = 'maple' OR name = 'caramel';
+SELECT * FROM donuts WHERE rating IS NULL;
+SELECT * FROM donuts WHERE rating IS NOT NULL;
 
 
 
